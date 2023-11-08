@@ -11,7 +11,7 @@ public class Exercicio_4 {
 
 	public static void main(String[] args) {
 		
-		float num1, num2, num3, num4;
+		float num1, num2, num3, num4, diferençaProdutos;
 		
 		System.out.println("Digite o primeiro numero: ");
 		num1 = leia.nextFloat();
@@ -22,7 +22,7 @@ public class Exercicio_4 {
 		System.out.println("Digite o quarto numero: ");
 		num4 = leia.nextFloat();
 		
-		float diferençaProdutos = (num1 * num2) - (num3 * num4);
+		diferençaProdutos = (num1 * num2) - (num3 * num4);
 		
 		System.out.println("A diferença dos produtos é: " + diferençaProdutos);
 
