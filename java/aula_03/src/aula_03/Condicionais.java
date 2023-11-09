@@ -1,8 +1,8 @@
-package aula_02;
+package aula_03;
 
 import java.util.Scanner;
 
-public class Calculadora {
+public class Condicionais {
 
 	static Scanner leia = new Scanner(System.in);
 
@@ -18,7 +18,12 @@ public class Calculadora {
 		System.out.println("Soma: " + (numero1 + numero2));
 		System.out.println("Subtração: " + (numero1 - numero2));
 
-		System.out.println("Divisão: " + (numero1 / numero2));
+		if (numero2 > 0) 
+			System.out.println("Divisão: " + (numero1 / numero2));
+		else 
+			System.out.println("Não dá para dividir por 0.");
+		
+		
 
 		System.out.println("Multipilicação: " + (numero1 * numero2));
 		System.out.println("Módulo (resto da divisão): " + (numero1 % 2));
