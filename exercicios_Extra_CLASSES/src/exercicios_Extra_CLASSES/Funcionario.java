@@ -1,21 +1,23 @@
 package exercicios_Extra_CLASSES;
 
-
+import cores.util.Cores;
 
 public class Funcionario {
+	
+	public static String theme = Cores.ANSI_BLACK_BACKGROUND + Cores.TEXT_GREEN_BOLD;
 	
 	private String nome;
 	private int numeroFuncionario;
 	private int genero;
-	private String cargo;
+	private String cidade;
 	private float salario;
 
-	public Funcionario (String nome, int numeroFuncionario, int genero, String cargo, float salario) {
+	public Funcionario (String nome, int numeroFuncionario, int genero, String cidade, float salario) {
 		
 		this.nome = nome;
 		this.numeroFuncionario = numeroFuncionario;
 		this.genero = genero;
-		this.cargo = cargo;
+		this.cidade = cidade;
 		this.salario = salario;
 }
 	
@@ -43,12 +45,12 @@ public class Funcionario {
 		this.genero = genero;
 	}
 
-	public String getCargo() {
-		return cargo;
+	public String getCidade() {
+		return cidade;
 	}
 
-	public String setCargo(String cargo) {
-		return cargo;
+	public String setCidade(String cidade) {
+		return cidade;
 	}
 
 	public float getSalario() {
@@ -70,13 +72,13 @@ public class Funcionario {
 		}
 		
 		
-		System.out.println("\n\n★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★");
+		System.out.println(theme + "\n\n★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★");
 		System.out.println("         Dados do Funcionário:          ");
 		System.out.println("★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★");
 		System.out.println("Nome: " + this.nome);
 		System.out.println("Numero do Funcionário: " + this.numeroFuncionario);
 		System.out.println("Genero: " + genero);
-		System.out.println("Cargo: " + this.cargo);
+		System.out.println("Cidade natal: " + this.cidade);
 		System.out.printf("Salário: %.2f ", this.salario);
 		
 

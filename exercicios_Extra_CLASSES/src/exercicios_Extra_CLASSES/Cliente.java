@@ -1,21 +1,26 @@
 package exercicios_Extra_CLASSES;
 
+import cores.util.Cores;
+
 public class Cliente {
 	
 	private String nome;
 	private int numeroCliente;
-	private int cpf;
+	private String cidade;
+	private String estado;
 	private int genero;
-	private String local;
+	
+	public static String theme = Cores.ANSI_WHITE_BACKGROUND + Cores.TEXT_RED_BOLD;
+	
 
-	public Cliente (String nome, int numeroCliente, int cpf, int genero, String local) {
+	public Cliente (String nome, int numeroCliente,String cidade, String estado, int genero) {
 		
 		this.nome = nome;
 		this.numeroCliente = numeroCliente;
-		this.cpf = cpf;
+		this.cidade = cidade;
+		this.estado = estado;
 		this.genero = genero;
-		this.local = local;
-}
+	}	
 	
 	public String getNome() {
 		return nome;
@@ -33,12 +38,20 @@ public class Cliente {
 		this.numeroCliente = numeroCliente;
 	}
 
-	public int getCpf() {
-		return cpf;
+	public String getCidade() {
+		return cidade;
 	}
 
-	public void setCpf(int cpf) {
-		this.cpf = cpf;
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+	
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setLocal(String estado) {
+		this.estado = estado;
 	}
 
 	public int getGenero() {
@@ -49,13 +62,6 @@ public class Cliente {
 		this.genero = genero;
 	}
 
-	public String getLocal() {
-		return local;
-	}
-
-	public void setLocal(String local) {
-		this.local = local;
-	}
 	
 	public void visualizar() {
 		
@@ -65,16 +71,21 @@ public class Cliente {
 		case 1 -> genero = "Feminino";
 		case 2 -> genero = "Masculino";
 		case 3 -> genero = "Não-Binário";
+		case 4 -> genero = "Não se aplica";
 		}
 		
 		
-		System.out.println("\n\n*************************************");
-		System.out.println("         Dados do Cliente:          ");
-		System.out.println("*************************************");
+		System.out.println(theme + "\n\n****************************************");
+		System.out.println("         Dados do Cliente:              ");
+		System.out.println("****************************************");
 		System.out.println("Nome do Cliente: " + this.nome);
 		System.out.println("Numero do Cliente: " + this.numeroCliente);
-		System.out.println("CPF: " + this.cpf);
+		System.out.println("Cidade: " + this.cidade);
+		System.out.println("Estado: " + this.estado);
 		System.out.println("Genero: " + genero);
-		System.out.println("Local: " + this.local);
+		
 	}
+	
 }
+
+
