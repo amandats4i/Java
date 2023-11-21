@@ -20,7 +20,7 @@ public class Vendedor extends Funcionario {
 
 	public void visualizar() {
 		super.visualizar();
-		System.out.println("\nCargo: " + this.vendedor);
+		System.out.println("Cargo: " + this.vendedor);
 
 	}
 }

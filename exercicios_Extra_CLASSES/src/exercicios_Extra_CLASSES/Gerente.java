@@ -20,7 +20,7 @@ public class Gerente extends Funcionario {
 
 	public void visualizar() {
 		super.visualizar();
-		System.out.println("\nCargo: " + this.gerente);
+		System.out.println("Cargo: " + this.gerente);
 
 	}
 }

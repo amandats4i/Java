@@ -79,8 +79,7 @@ public class Funcionario {
 		System.out.println("Numero do Funcionário: " + this.numeroFuncionario);
 		System.out.println("Genero: " + genero);
 		System.out.println("Cidade natal: " + this.cidade);
-		System.out.printf("Salário: %.2f ", this.salario);
+		System.out.printf("Salário: %.2f \n", this.salario);
 		
-
 }
 }
