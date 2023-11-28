@@ -6,6 +6,7 @@ public class Produto {
 	private String nome;
 	private int tipo;
 	private float preco;
+	
 	public Produto(int id, String nome, int tipo, float preco) {
 		super();
 		this.id = id;
@@ -52,7 +53,7 @@ public class Produto {
 		System.out.println("*************************************");
 		System.out.println("id: " + this.id);
 		System.out.println("Nome: " + this.nome);
-		System.out.println("tipo: " + tipo);
+		System.out.println("Tipo: " + tipo);
 		System.out.println("Preço: " + this.preco);
 		
 		

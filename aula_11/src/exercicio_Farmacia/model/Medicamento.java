@@ -21,7 +21,7 @@ public class Medicamento extends Produto {
 	
 	public void visualizar() {
 		super.visualizar(); //NAO ESQUECER DE CHAMAR A CLASSE SUPER PARA VISUALIZAÇÃO
-		System.out.println("Generico");
+		System.out.println("Generico: " + this.generico);
 	}
 
 }
